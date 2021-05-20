@@ -4,4 +4,16 @@
   padding: 0;
 }
 
-// TODO
+:root {
+  --color-shark: #1b1b23;
+  --color-white-800: #f8f8f8;
+  --color-pink: #ff57b2;
+}
+
+body {
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--color-white-800);
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-shark);
+}

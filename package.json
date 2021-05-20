@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --watchAll",
+    "debug": "NODE_OPTIONS='--inspect' next dev",
     "coverage": "jest --coverage"
   },
   "dependencies": {

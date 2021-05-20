@@ -1,1 +1,55 @@
-// TODO
+.container {
+  width: 43.75rem;
+  margin: 0 auto;
+  padding-top: 5.0625rem;
+
+  .logo {
+    margin-bottom: 4rem;
+  }
+
+  .posts {
+    .post {
+      & + .post {
+        margin-top: 3.125rem;
+      }
+
+      .title {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+      }
+
+      .infos {
+        display: flex;
+
+        > div {
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 0.625rem;
+          }
+
+          &:first-child {
+            margin-right: 1.875rem;
+          }
+        }
+
+        img {
+          height: 1.25rem;
+        }
+      }
+    }
+  }
+
+  .loadingMore {
+    margin-top: 4rem;
+    font-size: 1.125rem;
+    color: var(--color-pink);
+    cursor: pointer;
+  }
+}
