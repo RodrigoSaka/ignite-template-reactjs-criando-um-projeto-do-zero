@@ -7,6 +7,7 @@ import styles from './home.module.scss';
 import { formatDate } from '../services/utils';
 import Head from 'next/head';
 import Link from 'next/link';
+import Header from '../components/Header';
 
 interface Post {
   uid?: string;
@@ -31,13 +32,11 @@ export default function Home({ postsPagination }: HomeProps) {
   return (
     <>
       <Head>
-        <title>Criando um projeto do zero</title>
+        <title>Spacetraveling</title>
       </Head>
-      <main className={styles.container}>
-        <div className={styles.logo}>
-          <img src="/logo.png" alt="logo" />
-        </div>
+      <Header />
 
+      <main className={commonStyles.containerCenter}>
         <div className={styles.posts}>
           {postsPagination.results.map(post => (
             <Link href={`/post/${post.uid}`} key={post.uid}>
