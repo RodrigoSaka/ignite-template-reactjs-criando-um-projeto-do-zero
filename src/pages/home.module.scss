@@ -1,5 +1,7 @@
 .posts {
   .post {
+    cursor: pointer;
+
     & + .post {
       margin-top: 3.125rem;
     }
@@ -21,7 +23,7 @@
         display: flex;
         align-items: center;
 
-        img {
+        svg {
           margin-right: 0.625rem;
         }
 

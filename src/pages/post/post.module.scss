@@ -1,1 +1,50 @@
-// TODO
+.banner {
+  width: 100%;
+  margin-bottom: 5rem;
+
+  img {
+    width: 100%;
+    height: 25rem;
+    object-fit: none;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.infos {
+  display: flex;
+  margin-top: 1.5625rem;
+  margin-bottom: 4.125rem;
+
+  > div {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 0.625rem;
+    }
+  }
+
+  div + div {
+    margin-left: 1.875rem;
+  }
+}
+
+.content {
+  font-size: 1.125rem;
+
+  .heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 3.125rem;
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    margin-top: 1.5625rem;
+    margin-bottom: 1.5625rem;
+  }
+}
